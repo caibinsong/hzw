@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS [sign] (
+	[id] INTEGER  PRIMARY KEY AUTOINCREMENT NOT NULL,
+	[sign_type] NVARCHAR(32)  NULL,
+	[sign_count] INTEGER  NULL,
+	[gift] NVARCHAR(32) Null
+)

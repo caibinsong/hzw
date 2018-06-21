@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS [usereqpt] (
+	[id] INTEGER  PRIMARY KEY AUTOINCREMENT NOT NULL,
+	[userid] INTEGER  NULL,
+	[eqptid] INTEGER  NULL,
+	[name] NVARCHAR(64)  NULL,
+	[quality] NVARCHAR(64)  NULL,
+	[lv] INTEGER Null,
+	[num] REAL Null
+)

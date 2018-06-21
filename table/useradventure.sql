@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS [useradventure] (
+	[id] INTEGER  PRIMARY KEY AUTOINCREMENT NOT NULL,
+	[userid] INTEGER NULL,
+	[adventureindex] INTEGER NULL,
+	[todaytimes] INTEGER NULL
+)

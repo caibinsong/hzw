@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS [heroinfo] (
+	[id] INTEGER  PRIMARY KEY AUTOINCREMENT NOT NULL,
+	[name] NVARCHAR(64)  NULL,
+	[quality] NVARCHAR(10)  NULL,
+	[inithp] REAL Null,
+	[initatk] REAL  null,
+	[initdef] REAL null,
+	[initexp] REAL null,
+	[initwill] REAL null,
+	[hpgrowth] REAL null,
+	[atkgrowth] REAL null,
+	[defgrowth] REAL null,
+	[willgrowth] REAL null,
+	[potgrowth] REAL null,
+	[des] NVARCHAR(512)  NULL,
+	[selfskill] NVARCHAR(512)  NULL,
+	[luck1] NVARCHAR(512)  NULL,
+	[luck2] NVARCHAR(512)  NULL,
+	[luck3] NVARCHAR(512)  NULL,
+	[luck4] NVARCHAR(512)  NULL,
+	[luck5] NVARCHAR(512)  NULL,
+	[luck6] NVARCHAR(512)  NULL
+)

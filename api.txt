@@ -1,0 +1,46 @@
+返回值类型(每个返回值都会带上END:时间，用于操作超时使用)
+1、success END:2017-10-16 11:01:38 （操作成功）
+2、success:[json] END:2017-10-16 11:01:38 （操作成功）
+3、err:用户不存在 END:2017-10-16 10:59:04（操作失败,err:后面的可在客户端显示）
+
+------------------------------用户相关
+
+注册用户
+URL：	http://localhost:8088/user/addnewuser?user=12354&pwd=1232131
+
+用户登录
+URL：	http://localhost:8088/user/login?user=123545&pwd=1232131
+
+修改角色名
+URL：	http://localhost:8088/user/changename?user=1235411&userid=8&newname=6666
+
+
+------------------------------体力相关
+
+查询体力
+URL:	http://localhost:8088/strength/querystrength?userid=1
+
+使用体力(used<0为加 uesr>0为减)
+URL：	http://localhost:8088/strength/usestrength?userid=1&used=10
+
+体力查询
+URL：	http://localhost:8088/strength/querystrength?userid=1
+
+------------------------------钱相关
+使用钱 大于0为加 小于0为减 第一个为gold（金币） 第二个为diamod（钻石） 第三个为充的RMB
+URL:	http://localhost:8088/money/used?userid=1&money=1!-200!3
+
+-----------------------------抽抽 quality必须为大写ABCD的组合
+http://localhost:8088/raffle/dohero?userid=1&used=-300&quality=A	//抽英雄
+http://localhost:8088/raffle/doskill?userid=1&used=-300&quality=A	//抽技能
+http://localhost:8088/raffle/doeqpt?userid=1&used=-300&quality=A	//抽装备
+
+--------------------阵容
+http://localhost:8088/team/myteam?userid=1						//查看阵容
+http://localhost:8088/team/sethero?userid=1&userheroid=6&teamindex=2			//添加阵容新英雄和换英雄
+http://localhost:8088/team/seteqpt?userid=1&teamindex=1&types=eqpt2&usereqptid=1	//添加新装备和换装备
+http://localhost:8088/team/setskill?userid=1&teamindex=1&types=skill3&userskillid=2	//添加新技能和换技能
+
+--------------------背包
+http://localhost:8088/bag/bag?userid=1&types=hero//查看背包
+

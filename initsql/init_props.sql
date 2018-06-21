@@ -1,0 +1,3 @@
+insert into props(name,quality,typename,initnum,growthnum,des,gold,diamond,img) values('潜力珠','A','A',0,0,'激发潜力，把潜力转换成其他属性',10000,100,'');
+insert into props(name,quality,typename,initnum,growthnum,des,gold,diamond,img) values('潜力珠','B','A',0,0,'激发潜力，把潜力转换成其他属性',5000,50,'');
+insert into props(name,quality,typename,initnum,growthnum,des,gold,diamond,img) values('潜力珠','C','A',0,0,'激发潜力，把潜力转换成其他属性',3000,30,'');
